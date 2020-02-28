@@ -1,0 +1,76 @@
+*{
+    font-size: 16px;
+    padding: 0;
+    margin: 0;}
+
+#title{
+       background: red;
+       margin: 2px;
+   } 
+   #login{
+    background: rgb(71, 151, 51);
+    margin: 2px;
+    
+} 
+#navigation{
+    background: rgb(255, 217, 0);
+    margin: 2px;
+    
+} 
+#sidebar{
+    background: rgb(166, 255, 0);
+    margin: 2px;
+    
+} 
+#welcome{
+    background: rgb(0, 225, 255);
+    margin: 2px;
+    
+} 
+#events{
+    background: rgb(0, 38, 255);
+    margin: 2px;
+    
+} 
+#promotion{
+    background: rgb(255, 0, 212);
+    margin: 2px;
+    
+} 
+#contact{
+    background: rgb(255, 0, 21);
+    margin: 2px;
+    
+} 
+#footer{
+    background: rgba(73, 64, 64, 0.308);
+    margin: 2px;
+    
+} 
+#css-grid{
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows:  15vh 25vh 20vh 25vh 15vh  ;
+    grid-template-areas:"title login""navigation navigation""sidebar sidebar "" welcome welcome"" events events"" promotion promotion ""contact contact""footer footer";
+}
+#title{ grid-area: title;}
+#login{ grid-area:login;}
+#navigation{ grid-area: navigation;}
+#sidebar{ grid-area:sidebar;}
+#welcome{ grid-area:welcome;}
+#events{ grid-area:events;}
+#promotion{ grid-area:promotion;}
+#contact{ grid-area:contact;}
+#footer{ grid-area:footer;}
+
+@media screen and ( min-width: 1024px ){
+
+    #css-grid{
+        grid-template-columns: 25%  25%  25%  25% ;
+        grid-template-rows: 20% 20% 15% 25% 20%;
+        grid-template-areas: "title navigation navigation login" "welcome welcome welcome welcome " "events events promotion sidebar" "contact contact contact sidebar" " footer footer footer sidebar";
+    }
+
+}
+
