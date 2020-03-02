@@ -2,6 +2,7 @@
     font-size: 16px;
     padding: 0;
     margin: 0;}
+
     
     
     
@@ -104,10 +105,11 @@ background-color: maroon;
     
     margin: 8px;
     border: rgb(71, 32, 6) solid;
-    background-image: url(../img/wood3.jpg);
-    
+    background-image: url(../img/wood3.jpg);  
 } 
-#objective , #education ,#work-experience{
+
+
+#objective , #education ,#work-experience , #contact-info,#footer{
 
     margin: 8px;
     background-image: url(../img/wood3.jpg);
@@ -133,30 +135,67 @@ background-color: maroon;
 
 
 
-
-#contact-info{
+#contact-info , #footer{
     
     margin: 2px;
     border: brown solid;
     
-} 
-#footer{
-    
-    margin: 2px; 
-
- border:solid brown;
-
- 
 }
-    
+.fa {
+    padding:3px;
+    font-size:20px;
+    width:40px;
+    text-align: center;
+    text-decoration: none;
+    margin: 3px 3px;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .fa-google {
+    background: #dd4b39;
+    color: white;
+  }
+  
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  
+  .fa-youtube {
+    background: #bb0000;
+    color: white;
+  } 
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+.contact-info{
+    font-size: 10px;
+    color: gold;
+    margin: auto;
+    padding: 4px;
+}
 
   #css-grid{
     
     display: grid;
     grid-template-columns : 50% 50%;
-    grid-template-rows : 10% auto auto auto auto auto   ;
+    grid-template-rows : 10% auto auto auto auto auto auto ;
     grid-template-areas:"navigation navigation" "title title" "objective objective" "education education" "work-experience work-experience" "contact-info footer";
-    max-height: unset;
+    
     /* overflow: scroll; */
 }
 
@@ -167,10 +206,18 @@ background-color: maroon;
 #education{ grid-area:education;}
 #work-experience{ grid-area:work-experience;}
 #contact-info{ grid-area:contact-info;}
-#contact{ grid-area:contact;}
 #footer{ grid-area:footer;}
+@media screen and (min-width:1024px){
 
 
+
+#css-grid{
+
+    display:grid;
+    grid-template-columns: ;
+}
+
+}
 
 
 
