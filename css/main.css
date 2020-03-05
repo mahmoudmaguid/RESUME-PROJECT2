@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css?family=Trade+Winds&display=swap');
+
 *{  max-width: 2000px;
     font-size: 16px;
     padding: 0;
@@ -117,8 +120,8 @@ background-color: maroon;
 .objective-head{
    margin: 16px;
    font-weight: bolder;
-   font-family: 'Tangerine';
-   font-size: 32px;
+   font-family: 'Trade Winds', cursive;
+      font-size: 32px;
    color:lavenderblush;
    text-align: center;
 
@@ -134,9 +137,9 @@ background-color: maroon;
 }
 .objective-head1{
 
-  margin-top: 115px;
+  margin-top:95px;
   font-weight: bolder;
-  font-family: 'Tangerine';
+  font-family: 'Trade Winds', cursive;;
   font-size: 32px;
   color:lavenderblush;
   text-align: center;
